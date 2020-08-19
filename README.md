@@ -37,5 +37,5 @@ Hacking methodologies like session hyjacking via cross-site scripting etc will i
 ## So what does this script do
 
 ___It does not bypass any security mechanisms !!!___
-When your VPN session is set up the same authentication methodology is followed as with the application itself. So a credentials check and MFA/2FA authentication is done anyway. The script runs as part of the VPN initialisation causing routes to the AP to also traverse the VPN tunnel, via your companies network to the AP therefore being able to bypass subsequent MFA requests.  
+When your VPN session is set up the same authentication methodology is followed as with the application itself. So a credentials check and MFA/2FA authentication is done anyway. The script runs as part of the VPN initialisation causing routes to the AP to also traverse the VPN tunnel, via your companies network to the AP over the trusted link therefore being able to bypass subsequent MFA requests.  
 As soon as you disconnect the VPN all these routes are deleted and the normal pathways are followed again resulting in constant MFA requests.
